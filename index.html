@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Basic Meta Tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="A brief description of your webpage goes here.">
+        <meta name="keywords" content="keyword1, keyword2, keyword3">
+        <meta name="author" content="Your Name or Company">
+        
+        <!-- Open Graph Meta Tags for social media sharing -->
+        <meta property="og:title" content="Your Page Title">
+        <meta property="og:description" content="A brief description of your webpage goes here.">
+        <meta property="og:image" content="https://www.example.com/path-to-image.jpg">
+        <meta property="og:url" content="https://www.example.com/">
+        <meta property="og:type" content="website">
+        
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Your Page Title">
+        <meta name="twitter:description" content="A brief description of your webpage goes here.">
+        <meta name="twitter:image" content="https://www.example.com/path-to-image.jpg">
+        
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://www.example.com/">
+        
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.ico">
+        
+        <!-- Page Title -->
+        <title>USTD</title>
+        
+        <!-- External CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 1000, "easeInOutCubic", function(){
+                window.location.hash = hash;
+              });
+            }
+          });
+        });
+        </script>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+      </head>
+<body class="w-screen h-fit overflow-x-clip">
+    <header class="w-full h-full flex flex-col justify-center items-center">
+        <section class="nav-Containter z-20 w-full h-fit bg-[#00349A] flex flex-col justify-center items-center drop-shadow-md">
+            <nav class="flex flex-row justify-center items-center p-4 relative w-full max-w-[1512px] h-[6rem]">
+                <div class="logo flex-row flex items-center gap-1 absolute w-full px-2">
+                  <a class="pl-4" href="#home" title="USTD">
+                    <img class="w-[4rem] h-[4rem] object-cover" src="assets/icons/usdt-logo.svg" alt="Organization Logo">
+                  </a>
+                  <a class="font-bold text-[#ffffff] text-[2rem] ml-2" href="/" title="USTD">
+                      USTD
+                  </a>
+                </div>
+
+                <!-- desktop navBar -->
+                <ul class="flex-row flex gap-10 w-fit hidden md:flex">
+                  <li class="text-[1.2rem] text-[#ffffff] font-normal flex-col flex w-fit relative"><a href="#home" title="Home">Home</a><div class="w-full bg-white h-[0.5px] px-8 absolute bottom-0 left-[50%] -translate-x-1/2 -translate-y-1/2"></div></li>
+                  <li class="text-[1.2rem] text-[#ffffff] font-normal opacity-[58%]"><a href="#stories" title="Stories of Strength &amp; Transformation">About Us</a></li>
+                  <li class="text-[1.2rem] text-[#ffffff] font-light opacity-[58%]"><a href="#what-we-do" title="What We Do">Our Services</a></li>
+                  <li class="text-[1.2rem] text-[#ffffff] font-normal opacity-[58%]"><a href="#impact" title="Who We Are &amp; Why It Matters">Impact</a></li>
+                  <li class="text-[1.2rem] text-[#ffffff] font-normal opacity-[58%]"><a href="/" title="Impact in Action">Get Involved</a></li>
+                </ul>
+              </nav>
+        </section>
+      </header>
+      <main>
+        <!-- HERO and STORIES OF STRENGTH & TRANSFORMATION -->
+        <section id="home" class="w-full antialiased h-fit flex flex-col justify-center items-center relative">
+            <!-- Hero -->
+            <div class="hero-section z-10 w-full md:pr-3 h-fit justify-center w-full max-w-[1512px] relative">
+                <div class="text-layer z-10 w-full h-full px-3 md:px-8 pt-14 text-white flex flex-col absolute items-center">
+                    <div class="w-full h-full relative">
+                        <div class="w-full absolute bottom-0 left-0 flex flex-col justify-center items-center px-4 md:px-16 pb-24 md:pb-32">
+                            <h1 class="text-[1.7rem] md:text-[4rem] font-bold leading-[1.3] md:leading-[1] drop-shadow-xs py-8">What holds back aspiring <span class="text-[#FF8C00]">women</span> <span class="text-[#FF8C00]">entrepreneurs</span> when they have the vision but not the means?</h1>
+                            <h3 class="text-[0.856rem] md:text-[2rem] font-normal leading-[1.7] md:leading-[1] text-[#9e9e9e] md:py-5">Women facing family and social challenges struggle to turn their ideas into reality. Limited access to capital, mentorship, and opportunities keeps them from building sustainable businesses.</h3>
+                        </div>
+                        <div class="h-fit w-full absolute bottom-0 md:pr-3 justify-end items-end flex flex-col md:px-2 py-8 md:py-10">
+                            <div class="w-fit h-fit flex flex-row gap-3 items-center">
+                                <h4 class="text-[#EAEAEA] text-[0.75rem] md:text-[1.25rem] font-semibold italic max-w-[250px] leading-[1]">Do you need help? or want to help someone?</h4>
+                                <a href="">
+                                    <div class="flex flex-row bg-[#3E3E3E] md:hover:px-5 md:hover:px-4 duration-200 transition-px px-2 md:px-3 py-1 md:py-2 items-center gap-3 rounded-bl-[0.5rem] rounded-tl-[0.5rem]">
+                                        <div class="icon scale-[60%] md:scale-[100%] w-fit h-fit">
+                                            <img src="/assets/icons/readmore-icon.svg" alt="">
+                                        </div>
+                                        <div class="text-[0.6rem] md:text-[1.5rem] whitespace-nowrap">
+                                            <p>Read More ></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-layer w-full h-[42rem] md:w-full px-3 md:px-8 pt-14 md:h-fit text-white flex flex-col justify-center items-center">
+                    <div class="w-full h-full rounded-xl overflow-hidden relative">
+                        <div class="w-full h-full rounded-xl bg-gradient-to-b from-to-[rgba(102,102,102,0)] to-[#000000] absolute overflow-hidden"></div>
+                        <img class="object-cover w-full h-full" src="/assets/images/hero.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Stories -->
+            <div id="stories" class="stories-section z-10 pr-0 md:pr-3 w-full pb-20 md:pb-24 h-fit justify-center w-full max-w-[1512px] relative">
+                <h1 class="text-[2.5rem] md:text-[5.625rem] text-white px-4 md:px-8 font-bold leading-[1] py-10">
+                    Stories of <span class="text-[#D6FFFF]">Strength</span><br>& Transformation
+                </h1>
+                <div class="w-full h-fit flex flex-col md:flex-row justify-between">
+                    <div style="background-image: url('/assets/images/image.png');" class="md:hidden flex overflow-hidden self-stretch bg-no-repeat bg-cover flex-grow-1 max-w-[900px] relative flex-col h-[400px]" id="image-div">
+                        <div class="w-fit h-fit absolute top-[50%] -right-10 -translate-y-1/2">
+                            <svg width="337" height="488" viewBox="0 0 337 488" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_f_866_287)">
+                                <path d="M70.3806 247.212C68.9218 151.256 145.526 72.2864 241.481 70.8275C337.437 69.3687 291.69 150.792 293.148 246.748C294.607 342.703 326.975 416.391 231.02 417.849C135.065 419.308 71.8394 343.167 70.3806 247.212Z" fill="url(#paint0_linear_866_287)"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_f_866_287" x="0.360352" y="0.808228" width="372.426" height="487.062" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                <feGaussianBlur stdDeviation="35" result="effect1_foregroundBlur_866_287"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_866_287" x1="246.765" y1="418.31" x2="241.482" y2="70.8245" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#01349A"/>
+                                <stop offset="1" stop-color="#FF9549"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>                                
+                        </div>
+                        <div class="w-full h-full text-right text-[2.5rem] md:text-[6rem] text-[#D6FFFF] px-8 font-bold leading-[1] drop-shadow-xl flex flex-col justify-center items-end">
+                            <h4>Priya</h4>
+                        </div>
+                    </div>
+                    <div id="text-div" class="texts tracking-wide leading-[1.8] w-full max-w-[500px] px-10 md:px-0 md:pl-16 pt-10 md:pt-0 h-fit flex flex-col justify-center items-center opacity-90">
+                        <div class="w-full h-fit flex flex-col justify-center items-center">
+                            <p class="text-[1rem] md:text-[1.375rem] text-[#ffffff]">Priya, a young mother from Semmencherry, lost her husband and had to raise two small children alone. With no stable income and growing expenses, she struggled to support her family while managing childcare.</p>
+                            <span class="w-full h-[0.5px] bg-white mt-10 opacity-[37%] max-w-[17rem]"></span>
+                        </div>
+                        <div class="w-full h-fit flex flex-col justify-center items-center">
+                            <p class="text-[1rem] md:text-[1.375rem] text-[#ffffff] mt-10">USDT recognized Priya’s potential and provided her with a grinder to start a dosa batter business from home, allowing her to earn an income while caring for her children.</p>
+                            <span class="w-full h-[0.5px] bg-white mt-10 opacity-[37%] max-w-[17rem]"></span>
+                        </div>
+                        <div class="w-full h-fit flex flex-col justify-center items-center">
+                            <p class="text-[1rem] md:text-[1.375rem] text-[#ffffff] mt-10">Priya now runs a successful dosa batter business, earning a stable income to support her children’s education and daily needs. This support has given her financial independence and confidence to move forward.</p>
+                            <span class="w-full h-[0.5px] bg-white mt-10 opacity-[37%] max-w-[17rem]"></span>
+                        </div>
+                        <div class="w-full h-fit flex flex-col justify-end items-end">
+                                <a class="w-fit h-fit" href="">
+                                    <div class="flex flex-row bg-[#ffffff] hover:px-4 duration-200 transition-px px-3 py-2 items-center gap-2 rounded-bl-[0.5rem] rounded-br-[0.5rem]">
+                                        <div class="icon">
+                                            <img class="w-[1.3rem] h-[1.3rem] object-fit" src="/assets/icons/readmore-icon.svg" alt="">
+                                        </div>
+                                        <div class="text-[0.75rem] text-[#1B49A5]">
+                                            <p>Read More</p>
+                                        </div>
+                                    </div>
+                                </a>
+                        </div>
+                    </div>
+                    <div style="background-image: url('/assets/images/image2.jpg');" class="mx-8 hidden md:flex rounded-xl overflow-hidden self-stretch bg-no-repeat bg-cover flex-grow-1 max-w-[900px] relative flex-col" id="image-div">
+                        <div class="w-fit h-fit absolute top-[50%] -right-10 -translate-y-1/2">
+                            <svg width="337" height="488" viewBox="0 0 337 488" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_f_866_287)">
+                                <path d="M70.3806 247.212C68.9218 151.256 145.526 72.2864 241.481 70.8275C337.437 69.3687 291.69 150.792 293.148 246.748C294.607 342.703 326.975 416.391 231.02 417.849C135.065 419.308 71.8394 343.167 70.3806 247.212Z" fill="url(#paint0_linear_866_287)"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_f_866_287" x="0.360352" y="0.808228" width="372.426" height="487.062" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                <feGaussianBlur stdDeviation="35" result="effect1_foregroundBlur_866_287"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_866_287" x1="246.765" y1="418.31" x2="241.482" y2="70.8245" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#01349A"/>
+                                <stop offset="1" stop-color="#FF9549"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>                                
+                        </div>
+                        <div class="w-full h-full text-right text-[6rem] text-[#D6FFFF] px-8 font-bold leading-[1] drop-shadow-xl flex flex-col justify-center items-end">
+                            <h4>Priya</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- background color -->
+            <div class="Background absolute w-full h-full">
+                <div class="w-full h-full relative bg-[#004DE4]">
+                    <div class="w-[1100px] h-[827px] bg-[#ffffff] rounded-full opacity-70 blur-[160px] left-0 absolute top-[10%] -translate-y-1/2"></div>
+                    <div class="w-[1044px] h-[1051px] bg-[#ffffff] rounded-full opacity-70 blur-[200px] right-0 absolute top-[50%] -translate-y-1/2"></div>
+                    <div class="w-[555px] h-[514px] bg-[rgba(0, 86, 255, 0.82)] rounded-full opacity-70 blur-[200px] left-0 absolute top-[50%] -translate-y-1/2"></div>
+                    <div class="w-[644px] h-[606px] rounded-full opacity-70 blur-[100px] left-[20%] absolute top-[80%] -translate-y-1/2" style="background: linear-gradient(180deg, #0056FF 0%, #FCC493 38%, #FAFAFA 65%, #003499 100%);"></div>
+                    <div class="w-[644px] h-[606px] rounded-full opacity-50 blur-[100px] left-[40%] absolute top-[60%] -translate-y-1/2" style="background: linear-gradient(180deg, #0056FF 0%, #FCC493 38%, #FAFAFA 65%, #003499 100%);"></div>
+                    <div class="w-[644px] h-[498px] rounded-full opacity-70 blur-[100px] right-[15%] absolute top-[80%] -translate-y-1/2" style="background: linear-gradient(180deg, #0056FF 0%, #FCC493 38%, #FAFAFA 65%, #003499 100%);"></div>
+                    <div class="w-[644px] h-[606px] rounded-full opacity-50 blur-[100px] left-[10%] absolute top-[40%] -translate-y-1/2" style="background: linear-gradient(180deg, #0056FF 0%, #FCC493 38%, #FAFAFA 65%, #003499 100%);"></div>
+
+                    <!-- style="background: linear-gradient(180deg, #0056FF 0%, #FCC493 38%, #FAFAFA 65%, #003499 100%);" -->
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT WE DO -->
+        <section id="what-we-do" class="w-full h-fit flex flex-col justify-center items-center relative">
+            <!-- What We Do Title -->
+            <div id="stories" class="what-to-do-section md:pr-3 z-10 w-full pt-10 md:pt-20 pb-20 md:pb-32 h-fit justify-center w-full max-w-[1512px] relative">
+                <h1 class="text-[2.5rem] md:text-[5.625rem] text-[#00349A] px-3 md:px-8 font-bold md:leading-[1] leading-[1.2] pb-10">
+                    What<br><span class="text-[#88abf1]">We Do</span>
+                </h1>
+                <div class="w-full px-8 h-fit flex flex-col md:flex-row gap-20 md:gap-0 justify-between">
+                <!-- card 1 -->
+                <article class="card-one flex flex-row w-fit h-fit justify-center relative" itemscope itemtype="http://schema.org/Service">
+                    <section class="card-container md:w-[428px] w-full max-w-[370px] md:max-w-[428px] md:h-[260px] h-[198px] bg-[#FFD900] overflow-hidden rounded-bl-xl md:rounded-bl-3xl rounded-tl-xl md:rounded-tl-3xl rounded-tr-xl md:rounded-tr-3xl rounded-tr-3xl flex flex-row justify-between items-center">
+                      
+                      <!-- Image as a key visual element -->
+                      <figure class="card-image w-[350px] h-[260px] z-20" itemprop="image">
+                        <img class="w-[188px] h-[260px] object-cover" src="/assets/images/young-children-with-autism-playing-together 1.jpg" alt="Young children playing together at a daycare center">
+                      </figure>
+                      
+                      <!-- Content Section -->
+                      <section class="card-content flex-col flex w-auto h-full relative">
+                        <!-- Decorative blur element (purely visual) -->
+                        <div class="decorative-blur w-[220px] h-[204px] rounded-full -left-[45%] blur-[80px] absolute top-[50%] -translate-y-1/2" style="background: linear-gradient(180deg, #ffffff 0%, #ff0004 100%);" aria-hidden="true"></div>
+                        
+                        <!-- Header with title -->
+                        <header class="card-header">
+                          <h2 class="card-title text-[1.25rem] md:text-[25px] px-6 md:pt-8 pt-6 text-[#ffffff] font-semibold drop-shadow-md" itemprop="name">
+                            Day Care Center Support
+                          </h2>
+                        </header>
+                        
+                        <!-- Thematic divider using HR -->
+                        <hr class="card-divider w-full mx-6 max-w-[95px] mt-2 h-[0.5px] border-white opacity-[37%]" aria-hidden="true">
+                        
+                        <!-- Description -->
+                        <p class="card-description px-6 mt-4 text-[#ffffff] opacity-[94%] md:text-[15px] text-[13px] px-3 md:pr-10" itemprop="description">
+                          Safe and nurturing childcare for working mothers in resettlement areas.
+                        </p>
+                      </section>
+                    </section>
+                    
+                    <!-- Footer with call-to-action -->
+                    <footer class="card-footer absolute w-fit right-0 bottom-0 translate-y-[99%] drop-shadow-md">
+                      <a href="/" class="card-link flex flex-row bg-[#E09E00] hover:px-4 duration-200 transition-px px-3 py-2 items-center gap-2 rounded-bl-[0.5rem] rounded-br-[0.5rem]" aria-label="Read more about Day Care Center Support" itemprop="url">
+                        <span class="icon" aria-hidden="true">
+                          <img class="w-[1.3rem] opacity-[45%] h-[1.3rem] object-fit" src="/assets/icons/readmore-icon-white.svg" alt="">
+                        </span>
+                        <span class="link-text text-[0.75rem] text-[#ffffff]">Read More</span>
+                      </a>
+                    </footer>
+                </article>
+                <!-- card 2 -->
+                <article class="card-one flex flex-row w-fit h-fit justify-center relative" itemscope itemtype="http://schema.org/Service">
+                    <section style="background: linear-gradient(280deg, #992611 10%, #FF8E1D 60%);"  class="card-container md:w-[428px] w-full max-w-[370px] md:max-w-[428px] md:h-[260px] h-[198px] bg-[#FFD900] overflow-hidden rounded-bl-xl md:rounded-bl-3xl rounded-tl-xl md:rounded-tl-3xl rounded-tr-xl md:rounded-tr-3xl flex flex-row justify-between items-center">
+                      
+                      <!-- Image as a key visual element -->
+                      <figure class="card-image w-[350px] h-[260px] z-20" itemprop="image">
+                        <img class="w-[188px] h-[260px] object-cover" src="/assets/images/portrait-indian-man-selling-fabrics 1.jpg" alt="Young children playing together at a daycare center">
+                      </figure>
+                      
+                      <!-- Content Section -->
+                      <section class="card-content flex-col flex w-auto h-full relative">
+                        <!-- Decorative blur element (purely visual) -->
+                        <div class="decorative-blur w-[220px] h-[204px] rounded-full -left-[45%] blur-[80px] absolute top-[50%] -translate-y-1/2" style="background: linear-gradient(180deg, #ffffff 0%, #FFAB45 100%);" aria-hidden="true"></div>
+                        
+                        <!-- Header with title -->
+                        <header class="card-header">
+                          <h2 class="card-title text-[1.25rem] md:text-[25px] px-6 md:pt-8 pt-6 text-[#ffffff] font-semibold drop-shadow-md" itemprop="name">
+                            Entrepreneurship Support
+                          </h2>
+                        </header>
+                        
+                        <!-- Thematic divider using HR -->
+                        <hr class="card-divider w-full mx-6 max-w-[95px] mt-2 h-[0.5px] border-white opacity-[37%]" aria-hidden="true">
+                        
+                        <!-- Description -->
+                        <p class="card-description px-6 mt-4 text-[#ffffff] opacity-[94%] md:text-[15px] text-[13px] px-3 md:pr-10" itemprop="description">
+                            Training, funding, and market access to help women start businesses.
+                        </p>
+                      </section>
+                    </section>
+                    
+                    <!-- Footer with call-to-action -->
+                    <footer class="card-footer absolute w-fit right-0 bottom-0 translate-y-[99%] drop-shadow-md">
+                      <a href="/" class="card-link flex flex-row bg-[#B94F48] hover:px-4 duration-200 transition-px px-3 py-2 items-center gap-2 rounded-bl-[0.5rem] rounded-br-[0.5rem]" aria-label="Read more about Day Care Center Support" itemprop="url">
+                        <span class="icon" aria-hidden="true">
+                          <img class="w-[1.3rem] opacity-[45%] h-[1.3rem] object-fit" src="/assets/icons/readmore-icon-white.svg" alt="">
+                        </span>
+                        <span class="link-text text-[0.75rem] text-[#ffffff]">Read More</span>
+                      </a>
+                    </footer>
+                </article> 
+                <!-- card 3 -->
+                <article class="card-one flex flex-row w-fit h-fit justify-center relative" itemscope itemtype="http://schema.org/Service">
+                    <section style="background: linear-gradient(280deg, #475E27 10%, #4B563B 60%);" class="card-container md:w-[428px] w-full max-w-[370px] md:max-w-[428px] md:h-[260px] h-[198px] bg-[#FFD900] overflow-hidden rounded-bl-xl md:rounded-bl-3xl rounded-tl-xl md:rounded-tl-3xl rounded-tr-xl md:rounded-tr-3xl flex flex-row justify-between items-center">
+                      
+                      <!-- Image as a key visual element -->
+                      <figure class="card-image w-[350px] h-[260px] z-20" itemprop="image">
+                        <img class="w-[188px] h-[260px] object-cover" src="/assets/images/woman-teaching-classroom 1.jpg" alt="Young children playing together at a daycare center">
+                      </figure>
+                      
+                      <!-- Content Section -->
+                      <section class="card-content flex-col flex w-auto h-full relative">
+                        <!-- Decorative blur element (purely visual) -->
+                        <div class="decorative-blur w-[220px] h-[204px] rounded-full -left-[45%] blur-[80px] absolute top-[50%] -translate-y-1/2" style="background: linear-gradient(180deg, #ffffff 0%, #9A9500 100%);" aria-hidden="true"></div>
+                        
+                        <!-- Header with title -->
+                        <header class="card-header">
+                          <h2 class="card-title text-[1.25rem] md:text-[25px] px-6 md:pt-8 pt-6 text-[#ffffff] font-semibold drop-shadow-md" itemprop="name">
+                            Educational Support
+                          </h2>
+                        </header>
+                        
+                        <!-- Thematic divider using HR -->
+                        <hr class="card-divider w-full mx-6 max-w-[95px] mt-2 h-[0.5px] border-white opacity-[37%]" aria-hidden="true">
+                        
+                        <!-- Description -->
+                        <p class="card-description px-6 mt-4 text-[#ffffff] opacity-[94%] md:text-[15px] text-[13px] px-3 md:pr-10" itemprop="description">
+                            Learning programs, scholarships, and after-school support for children.
+                        </p>
+                      </section>
+                    </section>
+                    
+                    <!-- Footer with call-to-action -->
+                    <footer class="card-footer absolute w-fit right-0 bottom-0 translate-y-[99%] drop-shadow-md">
+                      <a href="/" class="card-link flex flex-row bg-[#6F894D] hover:px-4 duration-200 transition-px px-3 py-2 items-center gap-2 rounded-bl-[0.5rem] rounded-br-[0.5rem]" aria-label="Read more about Day Care Center Support" itemprop="url">
+                        <span class="icon" aria-hidden="true">
+                          <img class="w-[1.3rem] opacity-[45%] h-[1.3rem] object-fit" src="/assets/icons/readmore-icon-white.svg" alt="">
+                        </span>
+                        <span class="link-text text-[0.75rem] text-[#ffffff]">Read More</span>
+                      </a>
+                    </footer>
+                  </article> 
+            </div>
+        </section>
+
+        <!-- WHO WE ARE & WHY IT MATTERS -->
+        <section id="why-matters" class="w-full overflow-clip antialiased h-fit flex flex-col justify-center items-center relative">
+            <!-- Who We Are Title -->
+            <div id="stories" class="stories-section md:pr-3 z-10 w-full pt-10 md:pt-20 pb-20 md:pb-32 h-fit justify-center w-full max-w-[1512px] relative">
+                <h1 class="text-[2.5rem] md:text-[5.625rem] text-[#ffffff] px-3 md:px-8 font-bold md:leading-[1] leading-[1.2] pb-10">
+                    Who <span class="text-[#D6FFFF]">We Are </span>&<br>
+                    Why <span class="text-[#D6FFFF]">It Matters</span>
+                </h1>
+                <div class="w-full h-fit px-3 relative md:hidden">
+                    <div class="w-full h-full rounded-xl bg-gradient-to-b from-to-[rgba(102,102,102,0)] to-[#000000] absolute overflow-hidden"></div>
+                    <img class="rounded-xl" src="/assets/images/image5.png" alt="">
+                </div>
+                <div class="w-full hidden px-8 h-fit md:flex flex-row justify-between">
+                    <div class="mx-8 rounded-xl w-fit h-full overflow-hidden" id="image-div">
+                        <img class="scale-[101%]" style="-webkit-user-drag: none; user-select: none;" src="/assets/images/image3.jpg" alt="">
+                    </div>
+                    <div id="text-div" class="texts w-full max-w-[700px] pr-16 h-fit flex flex-col justify-center items-center opacity-90">
+                        <div class="w-full h-fit flex flex-col justify-center items-center">
+                            <p class="text-[1.688rem] text-[#ffffff] tracking-wide">
+                                <span class="text-[#6FF5FF]">USTD's Mission</span>: Empowering marginalized women through education, entrepreneurship, and community support.
+                                </p>
+                        </div>
+                        <div class="w-full h-fit flex flex-col justify-center items-center">
+                            <p class="text-[1.688rem] text-[#ffffff] mt-10 tracking-wide">
+                                <span class="text-[#FF8C00]">Our Vision</span>: A society where women have equal opportunities to succeed.
+                            </p>
+                        </div>
+                        <div class="w-full h-fit flex flex-col justify-center items-center">
+                            <p class="text-[1.688rem] text-[#ffffff] mt-10 tracking-wide">
+                                <span class="text-[#FF8484]">Impact</span>: Over 2 lakh individuals reached through programs and interventions.
+                            </p>
+                        </div>
+                        <div class="w-full h-fit flex flex-col items-center bg-[#00349A] mt-16 py-20 rounded-[50px]">
+                            <img style="-webkit-user-drag: none; user-select: none;" src="/assets/icons/num-animation.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- background color -->
+            <div class="Background absolute w-full h-full">
+                <div class="w-full h-full relative bg-[#397CFF]">
+                    <div class="w-[580.63px] h-[490px] rounded-full rotate-[110deg] blur-[80px] opacity-50 right-[20%] absolute top-[20%] -translate-y-1/2" style="background: conic-gradient(#0056FF 0deg, #FCC493 136deg, #FAFAFA 234deg, #003499);"></div>
+                    <div class="w-[580px] h-[732px] rounded-full blur-[100px] rotate-[90deg] opacity-50 right-[40%] absolute top-[75%] -translate-y-1/2 translate-x-1/2" style="background: conic-gradient(#0056FF 0deg, #FCC493 136deg, #FAFAFA 234deg, #003499);"></div>
+                    <div class="w-[490px] h-[580px] rounded-full rotate-[90deg] blur-[80px] opacity-50 left-[20%] absolute top-[25%] -translate-y-1/2 translate-x-1/2" style="background: conic-gradient(#0056FF 0deg, #FCC493 136deg, #FAFAFA 234deg, #003499);"></div>
+                    <div class="w-[490px] h-[580px] rounded-full rotate-[90deg] blur-[80px] opacity-50 left-[25%] absolute top-[70%] scale-110 -translate-y-1/2 translate-x-1/2" style="background: conic-gradient(#0056FF 0deg, #FCC493 136deg, #FAFAFA 234deg, #003499);"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACT IN ACTION -->
+        <section class="w-full z-10 h-fit flex flex-col justify-center items-center relative">
+            <!-- What We Do Title -->
+            <div id="impact" class="stories-section z-10 w-full py-20 h-fit justify-center w-full max-w-[1512px] relative">
+                <div class="w-full px-8 h-fit flex flex-row justify-between">
+                    <div class="rounded-xl w-fit h-full overflow-hidden" id="image-div">
+                        <h1 class="text-[5.625rem] text-[#00349A] font-bold leading-[1] pb-10">
+                            Impact<br>in <span class="text-[#88abf1]">Action</span>
+                        </h1>
+                        <div class="w-full px-8 h-fit flex flex-col items-center bg-[#00349A] mt-44 px-10 py-12 rounded-[50px]">
+                            <img class="scale-90" src="/assets/icons/num-animation.svg" draggable="false"
+                            style="-webkit-user-drag: none; user-select: none;" alt="">
+                        </div>
+                    </div>
+                    <div id="text-div" class="texts w-full max-w-[700px] pr-16 h-fit flex flex-col justify-center items-center">
+                        <div class="w-full h-fit flex flex-col justify-center items-center">
+                            <img style="-webkit-user-drag: none; user-select: none;" src="/assets/icons/impact-icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- VOICE OF CHANGE -->
+        <section id="why-matters" class="w-full overflow-clip antialiased h-fit flex flex-col justify-center items-center relative">
+            <!-- Who We Are Title -->
+            <div id="stories" class="stories-section z-10 w-full pt-20 pb-32  h-fit justify-center w-full max-w-[1512px] relative">
+                <h1 class="text-[5.625rem] text-white px-8 font-bold leading-[1] pb-10">
+                    <span class="text-[#D6FFFF]">Voice </span>of<br>
+                    Change
+                </h1>
+                <div class="w-full px-8 pt-16 pr-12 h-fit flex flex-col md:flex-row justify-between">
+                    <!-- card 4 -->
+                    <article class="card-one flex flex-row w-fit h-fit justify-center relative" itemscope itemtype="http://schema.org/Review">
+
+                        <!-- The service being reviewed (hidden metadata) -->
+                        <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Service" class="hidden">
+                            <meta itemprop="name" content="Daycare Support:" />
+                            <meta itemprop="description" content="USTD’s daycare support has been a blessing for my family. As a working mother in Mumbai, I can now focus on my job knowing my child is safe and cared for. Thank you, USTD" />
+                            <meta itemprop="image" content="/assets/images/young-children-with-autism-playing-together 1.jpg" />
+                        </div>
+                    
+                        <!-- The author of this review (hidden metadata) -->
+                        <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="hidden">
+                            <meta itemprop="name" content="Pooja Sharma" />
+                        </div>
+
+                        <!-- design element bg -->
+                        <div class="w-full h-full rounded-full -z-50 absolute bg-[#FFE207] opacity-[54%] blur-2xl"></div>
+                    
+                        <!-- Main content container -->
+                        <section class="card-container w-[428px] h-[260px] bg-[#0F4DC7] overflow-hidden rounded-bl-xl rounded-tl-xl rounded-tr-xl flex flex-row justify-between items-center">
+                    
+                            <!-- Visual element (displayed image only) -->
+                            <figure class="card-image w-[1000px] h-[260px] z-20">
+                                <img class="w-[188px] h-[260px] object-cover" src="/assets/images/happy-mothers-day.jpg" alt="Young children playing together at a daycare center">
+                            </figure>
+                    
+                            <!-- Card content -->
+                            <section class="card-content flex-col flex w-auto h-full relative">
+                                <!-- Decorative blur (purely visual) -->
+                                <div class="decorative-blur z-20 w-[220px] h-full rounded -left-[45%] absolute top-[50%] -translate-y-1/2" style="background: linear-gradient(90deg, rgba(15,77,199, 0) 0%, #0F4DC7 40%);" aria-hidden="true">
+                                </div>
+                    
+                                <!-- Header -->
+                                <header class="card-header z-30">
+                                    <h2 class="card-title text-[16px] pl-3 pr-6 pt-8 text-[#ffffff] font-semibold drop-shadow-md">
+                                        Daycare Support:
+                                    </h2>
+                                </header>
+                                <!-- The "reviewBody" for the testimonial text -->
+                                <p class="card-description px-3 z-30 text-[#ffffff] opacity-[94%] text-[15px] font-light italic pr-10" itemprop="reviewBody">
+                                    "USTD’s daycare support has been a blessing for my family. As a working mother in Mumbai, I can now focus on my job knowing my child is safe and cared for. Thank you, USTD!"
+                                </p>
+                            </section>
+                        </section>
+                    
+                        <!-- Call-to-action link (URL to read the full review or details) -->
+                        <footer class="card-footer absolute w-fit right-0 bottom-0 translate-y-[99%] drop-shadow-md">
+                            <a href="/" class="card-link flex flex-row bg-[#FFC946] hover:px-4 duration-200 transition-px px-3 py-2 
+                                                    items-center gap-2 rounded-bl-[0.5rem] rounded-br-[0.5rem]" aria-label="Read more about Day Care Center Support" itemprop="url">
+                                <span class="icon" aria-hidden="true">
+                                    -
+                                </span>
+                                <span class="link-text text-[0.688rem] text-light italic text-[#000000]">Pooja Sharma, Mumbai</span>
+                            </a>
+                        </footer>
+                    </article>
+                    <!-- card 5 -->
+                    <article class="card-one flex flex-row w-fit h-fit justify-center relative" itemscope itemtype="http://schema.org/Review">
+
+                        <!-- The service being reviewed (hidden metadata) -->
+                        <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Service" class="hidden">
+                            <meta itemprop="name" content="Entrepreneurship Support:" />
+                            <meta itemprop="description" content="Starting my small business seemed impossible until USTD provided training and funding support. Today, I run my own samosa shop in Delhi. They truly changed my life" />
+                            <meta itemprop="image" content="/assets/images/young-children-with-autism-playing-together 1.jpg" />
+                        </div>
+                    
+                        <!-- The author of this review (hidden metadata) -->
+                        <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="hidden">
+                            <meta itemprop="name" content="Lakshmi" />
+                        </div>
+
+                        <!-- design element bg -->
+                        <div class="w-full h-full rounded-full -z-50 absolute bg-[#FF8C00] blur-2xl"></div>
+                    
+                        <!-- Main content container -->
+                        <section class="card-container w-[428px] h-[260px] bg-[#0F4DC7] overflow-hidden rounded-bl-xl rounded-tl-xl rounded-tr-xl flex flex-row justify-between items-center">
+                    
+                            <!-- Visual element (displayed image only) -->
+                            <figure class="card-image w-[1000px] h-[260px] z-20">
+                                <img class="w-[188px] h-[260px] object-cover" src="/assets/images/freepik__the-style-is-candid-image-photography-with-natural__3821.jpg" alt="Young children playing together at a daycare center">
+                            </figure>
+                    
+                            <!-- Card content -->
+                            <section class="card-content flex-col flex w-auto h-full relative">
+                                <!-- Decorative blur (purely visual) -->
+                                <div class="decorative-blur z-20 w-[220px] h-full rounded -left-[45%] absolute top-[50%] -translate-y-1/2" style="background: linear-gradient(90deg, rgba(15,77,199, 0) 0%, #0F4DC7 40%);" aria-hidden="true">
+                                </div>
+                    
+                                <!-- Header -->
+                                <header class="card-header z-30">
+                                    <h2 class="card-title text-[16px] pl-3 pr-6 pt-8 text-[#ffffff] font-semibold drop-shadow-md">
+                                        Entrepreneurship Support:
+                                    </h2>
+                                </header>
+                                <!-- The "reviewBody" for the testimonial text -->
+                                <p class="card-description px-3 z-30 text-[#ffffff] opacity-[94%] text-[15px] font-light italic pr-10" itemprop="reviewBody">
+                                    "Starting my small business seemed impossible until USTD provided training and funding support. Today, I run my own samosa shop in Delhi. They truly changed my life!"
+                                </p>
+                            </section>
+                        </section>
+                    
+                        <!-- Call-to-action link (URL to read the full review or details) -->
+                        <footer class="card-footer absolute w-fit right-0 bottom-0 translate-y-[99%] drop-shadow-md">
+                            <a href="/" class="card-link flex flex-row bg-[#FF8C00] hover:px-4 duration-200 transition-px px-3 py-2 items-center gap-2 rounded-bl-[0.5rem] rounded-br-[0.5rem]" aria-label="Read more about Day Care Center Support" itemprop="url">
+                                <span class="icon" aria-hidden="true">
+                                    -
+                                </span>
+                                <span class="link-text text-[0.688rem] text-light italic text-[#000000]">Lakshmi, Delhi</span>
+                            </a>
+                        </footer>
+                    </article>
+                    <!-- card 6 -->
+                    <article class="card-one flex flex-row w-fit h-fit justify-center relative" itemscope itemtype="http://schema.org/Review">
+
+                        <!-- The service being reviewed (hidden metadata) -->
+                        <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Service" class="hidden">
+                            <meta itemprop="name" content="Educational Support:" />
+                            <meta itemprop="description" content="I dreamed of becoming a teacher, but financial struggles held me back. USTD’s scholarship and mentoring program helped me complete my studies. I am forever grateful!" />
+                            <meta itemprop="image" content="/assets/images/young-children-with-autism-playing-together 1.jpg" />
+                        </div>
+                    
+                        <!-- The author of this review (hidden metadata) -->
+                        <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="hidden">
+                            <meta itemprop="name" content="Akshaya" />
+                        </div>
+
+                        <!-- design element bg -->
+                        <div class="w-full h-full rounded-full -z-50 absolute bg-[#539F5E] opacity-[70%] blur-2xl"></div>
+                    
+                        <!-- Main content container -->
+                        <section class="card-container w-[428px] h-[260px] bg-[#0F4DC7] overflow-hidden rounded-bl-xl rounded-tl-xl rounded-tr-xl flex flex-row justify-between items-center">
+                    
+                            <!-- Visual element (displayed image only) -->
+                            <figure class="card-image w-[1000px] h-[260px] z-20">
+                                <img class="w-[188px] h-[260px] object-cover" src="/assets/images/smiling-girls-college-student-photo.jpg" alt="Young children playing together at a daycare center">
+                            </figure>
+                    
+                            <!-- Card content -->
+                            <section class="card-content flex-col flex w-auto h-full relative">
+                                <!-- Decorative blur (purely visual) -->
+                                <div class="decorative-blur z-20 w-[220px] h-full rounded -left-[45%] absolute top-[50%] -translate-y-1/2" style="background: linear-gradient(90deg, rgba(15,77,199, 0) 0%, #0F4DC7 40%);" aria-hidden="true">
+                                </div>
+                    
+                                <!-- Header -->
+                                <header class="card-header z-30">
+                                    <h2 class="card-title text-[16px] pl-3 pr-6 pt-8 text-[#ffffff] font-semibold drop-shadow-md">
+                                        Educational Support:
+                                    </h2>
+                                </header>
+                                <!-- The "reviewBody" for the testimonial text -->
+                                <p class="card-description px-3 z-30 text-[#ffffff] opacity-[94%] text-[15px] font-light italic pr-10" itemprop="reviewBody">
+                                    "I dreamed of becoming a teacher, but financial struggles held me back. USTD’s scholarship and mentoring program helped me complete my studies. I am forever grateful!"
+                                </p>
+                            </section>
+                        </section>
+                    
+                        <!-- Call-to-action link (URL to read the full review or details) -->
+                        <footer class="card-footer absolute w-fit right-0 bottom-0 translate-y-[99%] drop-shadow-md">
+                            <a href="/" class="card-link flex flex-row bg-[#539F5E] hover:px-4 duration-200 transition-px px-3 py-2 items-center gap-2 rounded-bl-[0.5rem] rounded-br-[0.5rem]" aria-label="Read more about Day Care Center Support" itemprop="url">
+                                <span class="icon" aria-hidden="true">
+                                    -
+                                </span>
+                                <span class="link-text text-[0.688rem] text-light italic text-[#000000]">Akshaya, Bangalore</span>
+                            </a>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+            <!-- background color -->
+            <div class="Background absolute w-full h-full">
+                <div class="w-full h-full relative bg-[#408CFF]">
+                    <div class="w-full h-full absolute bottom-0" style="background: linear-gradient(180deg, #408CFF 20%, rgba(255,255,255,1) 45%);"></div>
+                    <div class="w-[490px] h-[600px] rounded-full blur-[80px] opacity-100 scale-105 rotate-[90deg] left-[66%] absolute top-[70%] -translate-y-1/2 -translate-x-1/2" style="background: conic-gradient(#0056FF 0deg, #FCC493 136deg, #FAFAFA 234deg, #003499);"></div>
+                    <div class="w-[490px] h-[600px] rounded-full blur-[100px] opacity-80 scale-90 rotate-[200deg] left-[10%] absolute top-[70%] -translate-y-1/2 -translate-x-1/2" style="background: conic-gradient(#0056FF 0deg, #FCC493 136deg, #FAFAFA 234deg, #003499);"></div>
+                </div>
+            </div>
+        </section>
+      </main>
+</body>
+</html>
