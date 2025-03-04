@@ -57,7 +57,7 @@
         });
         </script>
         <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-      </head>
+</head>
 <body class="w-full h-fit overflow-x-clip">
     <header class="w-full h-full flex flex-col justify-center items-center">
         <section class="nav-Containter z-20 w-full h-fit bg-[#00349A] flex flex-col justify-center items-center drop-shadow-md">
@@ -222,7 +222,7 @@
                 </h1>
                 <div class="w-full px-8 h-fit flex flex-col md:flex-row gap-20 md:gap-0 justify-between">
                 <!-- card 1 -->
-                <article class="card-one flex flex-row w-full h-fit justify-center relative" itemscope itemtype="http://schema.org/Service">
+                <article class="card-one flex flex-row w-full md:w-fit h-fit justify-center relative" itemscope itemtype="http://schema.org/Service">
                     <section class="card-container md:w-[428px] w-full max-w-[370px] md:max-w-[428px] md:h-[260px] h-[198px] bg-[#FFD900] overflow-hidden rounded-bl-xl md:rounded-bl-3xl rounded-tl-xl md:rounded-tl-3xl rounded-tr-xl md:rounded-tr-3xl rounded-tr-3xl flex flex-row justify-between items-center">
                       
                       <!-- Image as a key visual element -->
@@ -253,17 +253,19 @@
                     </section>
                     
                     <!-- Footer with call-to-action -->
-                    <footer class="card-footer absolute w-fit right-0 bottom-0 translate-y-[99%] drop-shadow-md">
-                      <a href="/" class="card-link flex flex-row bg-[#E09E00] hover:px-4 duration-200 transition-px px-3 py-2 items-center gap-2 rounded-bl-[0.5rem] rounded-br-[0.5rem]" aria-label="Read more about Day Care Center Support" itemprop="url">
-                        <span class="icon" aria-hidden="true">
-                          <img class="w-[1.3rem] opacity-[45%] h-[1.3rem] object-fit" src="/assets/icons/readmore-icon-white.svg" alt="">
-                        </span>
-                        <span class="link-text text-[0.75rem] text-[#ffffff]">Read More</span>
-                      </a>
-                    </footer>
+                    <section class="footer-container absolute md:w-[428px] w-full max-w-[370px] md:max-w-[428px] md:h-[260px] h-[198px] flex flex-row justify-between items-center">
+                        <footer class="card-footer absolute w-fit right-0 bottom-0 translate-y-[99%] drop-shadow-md">
+                            <a href="/" class="card-link flex flex-row bg-[#E09E00] hover:px-4 duration-200 transition-px px-3 py-2 items-center gap-2 rounded-bl-[0.5rem] rounded-br-[0.5rem]" aria-label="Read more about Day Care Center Support" itemprop="url">
+                              <span class="icon" aria-hidden="true">
+                                <img class="w-[1.3rem] opacity-[45%] h-[1.3rem] object-fit" src="/assets/icons/readmore-icon-white.svg" alt="">
+                              </span>
+                              <span class="link-text text-[0.75rem] text-[#ffffff]">Read More</span>
+                            </a>
+                          </footer>
+                    </section>
                 </article>
                 <!-- card 2 -->
-                <article class="card-one flex flex-row w-full h-fit justify-center relative" itemscope itemtype="http://schema.org/Service">
+                <article class="card-one flex flex-row w-full md:w-fit h-fit justify-center relative" itemscope itemtype="http://schema.org/Service">
                     <section style="background: linear-gradient(280deg, #992611 10%, #FF8E1D 60%);"  class="card-container md:w-[428px] w-full max-w-[370px] md:max-w-[428px] md:h-[260px] h-[198px] bg-[#FFD900] overflow-hidden rounded-bl-xl md:rounded-bl-3xl rounded-tl-xl md:rounded-tl-3xl rounded-tr-xl md:rounded-tr-3xl flex flex-row justify-between items-center">
                       
                       <!-- Image as a key visual element -->
@@ -294,17 +296,19 @@
                     </section>
                     
                     <!-- Footer with call-to-action -->
-                    <footer class="card-footer absolute w-fit right-0 bottom-0 translate-y-[99%] drop-shadow-md">
-                      <a href="/" class="card-link flex flex-row bg-[#B94F48] hover:px-4 duration-200 transition-px px-3 py-2 items-center gap-2 rounded-bl-[0.5rem] rounded-br-[0.5rem]" aria-label="Read more about Day Care Center Support" itemprop="url">
-                        <span class="icon" aria-hidden="true">
-                          <img class="w-[1.3rem] opacity-[45%] h-[1.3rem] object-fit" src="/assets/icons/readmore-icon-white.svg" alt="">
-                        </span>
-                        <span class="link-text text-[0.75rem] text-[#ffffff]">Read More</span>
-                      </a>
-                    </footer>
+                    <section class="footer-container absolute md:w-[428px] w-full max-w-[370px] md:max-w-[428px] md:h-[260px] h-[198px] flex flex-row justify-between items-center">
+                        <footer class="card-footer absolute w-fit right-0 bottom-0 translate-y-[99%] drop-shadow-md">
+                            <a href="/" class="card-link flex flex-row bg-[#B94F48] hover:px-4 duration-200 transition-px px-3 py-2 items-center gap-2 rounded-bl-[0.5rem] rounded-br-[0.5rem]" aria-label="Read more about Day Care Center Support" itemprop="url">
+                              <span class="icon" aria-hidden="true">
+                                <img class="w-[1.3rem] opacity-[45%] h-[1.3rem] object-fit" src="/assets/icons/readmore-icon-white.svg" alt="">
+                              </span>
+                              <span class="link-text text-[0.75rem] text-[#ffffff]">Read More</span>
+                            </a>
+                          </footer>
+                    </section>
                 </article> 
                 <!-- card 3 -->
-                <article class="card-one flex flex-row w-full h-fit justify-center relative" itemscope itemtype="http://schema.org/Service">
+                <article class="card-one flex flex-row w-full md:w-fit h-fit justify-center relative" itemscope itemtype="http://schema.org/Service">
                     <section style="background: linear-gradient(280deg, #475E27 10%, #4B563B 60%);" class="card-container md:w-[428px] w-full max-w-[370px] md:max-w-[428px] md:h-[260px] h-[198px] bg-[#FFD900] overflow-hidden rounded-bl-xl md:rounded-bl-3xl rounded-tl-xl md:rounded-tl-3xl rounded-tr-xl md:rounded-tr-3xl flex flex-row justify-between items-center">
                       
                       <!-- Image as a key visual element -->
@@ -335,14 +339,16 @@
                     </section>
                     
                     <!-- Footer with call-to-action -->
-                    <footer class="card-footer absolute w-fit right-0 bottom-0 translate-y-[99%] drop-shadow-md">
-                      <a href="/" class="card-link flex flex-row bg-[#6F894D] hover:px-4 duration-200 transition-px px-3 py-2 items-center gap-2 rounded-bl-[0.5rem] rounded-br-[0.5rem]" aria-label="Read more about Day Care Center Support" itemprop="url">
-                        <span class="icon" aria-hidden="true">
-                          <img class="w-[1.3rem] opacity-[45%] h-[1.3rem] object-fit" src="/assets/icons/readmore-icon-white.svg" alt="">
-                        </span>
-                        <span class="link-text text-[0.75rem] text-[#ffffff]">Read More</span>
-                      </a>
-                    </footer>
+                    <section class="footer-container absolute md:w-[428px] w-full max-w-[370px] md:max-w-[428px] md:h-[260px] h-[198px] flex flex-row justify-between items-center">
+                        <footer class="card-footer absolute w-fit right-0 bottom-0 translate-y-[99%] drop-shadow-md">
+                            <a href="/" class="card-link flex flex-row bg-[#6F894D] hover:px-4 duration-200 transition-px px-3 py-2 items-center gap-2 rounded-bl-[0.5rem] rounded-br-[0.5rem]" aria-label="Read more about Day Care Center Support" itemprop="url">
+                              <span class="icon" aria-hidden="true">
+                                <img class="w-[1.3rem] opacity-[45%] h-[1.3rem] object-fit" src="/assets/icons/readmore-icon-white.svg" alt="">
+                              </span>
+                              <span class="link-text text-[0.75rem] text-[#ffffff]">Read More</span>
+                            </a>
+                          </footer>
+                    </section>
                   </article> 
             </div>
         </section>
